@@ -1,0 +1,18 @@
+
+#JAVA IDE setting
+.project
+.classpath
+.settings/*
+
+# vs code setting
+.vscode/*
+
+#JAVA IDE default build path
+bin/*
+
+#Gradle build path
+build/*
+
+#Gradle temp state-saved directory
+.gradle/*
+.gradletasknamecache
