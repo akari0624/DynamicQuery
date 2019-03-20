@@ -1,11 +1,16 @@
 # Dynamic Query
 ## 適用情境
-  - 用ＪＤＢＣ在處理向資料庫查詢這一段時，如果查詢的參數是不固定長度的，在組出SQL句子時很容易會寫出字串拼接的程式碼。
+  - 用JDBC在處理向資料庫查詢這一段時，如果查詢的參數數量不是固定的，在組出SQL句子時很容易會寫出大量if else+字串拼接的可怕程式碼。
   - 本Library欲解決這樣的窘境，讓在組出不定數量的查詢的ＳＱＬ句子給`PreparedStatement`用的時候的程式碼依然能保持整潔。
   
   
 ## 開發環境
   - 本專案使用`Gradle 4.10.2`來處理測試, 編譯, 打包出jar檔...等等雜事，所以開發用的電腦上必須安裝好`Gradle`。
+  - 視情況看要不要把gradle加入PATH
+  ``` sh
+  # in your shell config file
+  export PATH=/path/to/your/gradle_directory/bin:$PATH
+  ```
 
 
   
@@ -40,8 +45,7 @@
   
   
  ## 使用範例
-   - 可看MOILAND專案的 [com.adm.csl003.models.dao.RareTextSQLServerDAOImpl](http://172.16.32.73/morris.chen/moiland/blob/master/src/com/adm/csl003/models/dao/RareTextSQLServerDAOImpl.java)          
-
+- [@see testCase](https://github.com/akari0624/DynamicQuery/blob/master/src/test/java/com/util/dynamic_query/DynamicQueryTest.java)
 
 
 
