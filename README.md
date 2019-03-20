@@ -45,7 +45,7 @@
   
   
  ## 使用範例
-- [@see testCase](https://github.com/akari0624/DynamicQuery/blob/master/src/test/java/com/util/dynamic_query/DynamicQueryTest.java)
+- [@see testCase](https://github.com/akari0624/DynamicQuery/blob/master/src/test/java/com/util/dynamic_query/DynamicQueryTest.java#L174)
 
 
 
