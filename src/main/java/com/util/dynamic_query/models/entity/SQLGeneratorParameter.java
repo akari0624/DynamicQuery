@@ -16,7 +16,7 @@ public class SQLGeneratorParameter {
 	
 	private PercentSignEnum percentSignEnum = null;
 	
-	private boolean isValueToBeAssignNeefToBeNull = false;
+	private boolean isValueToBeAssignNeedToBeNull = false;
 	
 	
 	/**
@@ -94,9 +94,9 @@ public class SQLGeneratorParameter {
 	/**
 	 *  添加特殊狀況 	?的值必須是 null時  用來call的函數  可串接
 	 */
-    public SQLGeneratorParameter valueToBeAssignNeefToBeNull() {
+    public SQLGeneratorParameter valueToBeAssignNeedToBeNull() {
 		
-		this.isValueToBeAssignNeefToBeNull = true;
+		this.isValueToBeAssignNeedToBeNull = true;
 		
 		return this;
 		
@@ -114,9 +114,9 @@ public class SQLGeneratorParameter {
 		return this.percentSignEnum;
 	}
 	  
-	public boolean getIsValueToBeAssignNeefToBeNull() {
+	public boolean getIsValueToBeAssignNeedToBeNull() {
 		
-		return this.isValueToBeAssignNeefToBeNull;
+		return this.isValueToBeAssignNeedToBeNull;
 	}
 	
 	

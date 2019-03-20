@@ -28,10 +28,6 @@ public class DynamicQueryImpl implements DynamicQuery {
 		
 		
 		  StringBuilder sb = new StringBuilder();
-		
-		  
-		
-		
 		  
 		  this.okParameters = new ArrayList<SQLGeneratorParameter>();
 		  
@@ -49,7 +45,7 @@ public class DynamicQueryImpl implements DynamicQuery {
 		int okParametersLength = okParameters.size();
 		for(SQLGeneratorParameter p : this.okParameters){
 			
-			 sb.append(" ");
+			  sb.append(" ");
 			  sb.append(p.getColumnName());
 			  sb.append(" ");
 			  sb.append(p.getOperator());
@@ -218,7 +214,7 @@ for(int i = 0; i<parameterListLength; i+=1 ) {
 				continue;
 			}
 			
-			if( !oneCondition.getIsValueToBeAssignNeefToBeNull() && valueToBeAssigned == null) {
+			if( !oneCondition.getIsValueToBeAssignNeedToBeNull() && valueToBeAssigned == null) {
 				
 				continue;
 			}
