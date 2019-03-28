@@ -8,13 +8,14 @@ import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 import com.util.dynamic_query.models.entity.SQLGeneratorParameter;
 
 
 
 
-
+@Scope("prototype")
 @Service("dynamicQuery1")
 public class DynamicQueryImpl implements DynamicQuery {
 	
