@@ -20,6 +20,8 @@ dependencies {
     
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'log4j', name: 'log4j', version: '1.2.16'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
@@ -35,5 +37,6 @@ repositories {
 jar {
     baseName = 'dynamic_query'
     version = '1.0.1'
+    exclude('log4j.properties')
 }
 

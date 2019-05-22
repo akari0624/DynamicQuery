@@ -16,3 +16,7 @@ build/*
 #Gradle temp state-saved directory
 .gradle/*
 .gradletasknamecache
+
+#log files  
+*.log
+*.logs
